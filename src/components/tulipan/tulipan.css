@@ -1,0 +1,37 @@
+.cora{
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.cora.corazon{
+    animation: ascenso 2.5s ease-in-out;
+}
+
+@keyframes ascenso {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  60% {
+    transform: translateY(-10px) scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-30px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* Tamano tulipan */
+.tupAma {
+    width: 300px;
+    height: auto;
+    overflow: visible;
+}
+
+/* svg {
+    width: 50px;
+    height: auto;
+} */

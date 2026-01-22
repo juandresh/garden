@@ -1,0 +1,37 @@
+.exterior {
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.exterior.girar {
+  animation: giroPetalos 3s ease-in-out;
+}
+
+@keyframes giroPetalos {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.interior {
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.interior.girar {
+  animation: giroPetalos2 3s ease-in-out;
+}
+
+@keyframes giroPetalos2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
