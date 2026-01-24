@@ -1,12 +1,21 @@
 import * as React from "react"
-const Lirio = (props) => (
+import { useState } from "react";
+import "./lirio.css"
+
+const Lirio = (props) => {
+const [abeja, setAbeja] = useState(false);
+
+  return (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    width="51mm"
-    height="92mm"
+    // width="51mm"
+    // height="92mm"
     viewBox="0 0 51 92"
+    onClick={() => setAbeja(!abeja)}
+    style={{ cursor: "pointer" }}
     {...props}
+    className="lirios"
   >
     <path
       d="m75.01 147.968-1.787-2.05s-2.57-1.45-3.704-2.382c-1.277-1.049-2.476-2.228-3.44-3.571-1.2-1.675-2.1-3.568-2.844-5.49-.247-.639-.529-1.985-.529-1.985s2.204 1.324 3.308 1.984c1.255.752 2.608 1.36 3.77 2.25 1.584 1.213 3.181 2.513 4.3 4.167.587.868 1.19 2.91 1.19 2.91l.198 4.564z"
@@ -397,6 +406,238 @@ const Lirio = (props) => (
         transform="translate(-51.036 -102.26)"
       />
     </g>
+
+    <g className={`bee ${abeja ? "abeja" : ""}`}>
+
+      <path
+        d="M66.142 8.004s.094-.364.074-.546c-.025-.236-.094-.486-.244-.67-.066-.081-.164-.16-.269-.165-.048-.003-.117.015-.132.062-.025.079.06.163.124.215.08.063.198.049.29.09.026.013.074.046.074.046"
+        style={{
+          opacity: 1,
+          fill: "#000",
+          fillOpacity: 1,
+          stroke: "#000",
+          strokeWidth: 0.195,
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          strokeDasharray: "none",
+          strokeOpacity: 1,
+          paintOrder: "markers fill stroke",
+        }}
+        transform="translate(-8.686 -2.44)"
+      />
+      <path
+        d="M67.34 7.881s-.259-.446-.386-.678c-.244-.448-.534-.928-.526-1.438.007-.395.108-.892.445-1.1.337-.208.83-.08 1.186.094.328.16.573.482.737.807.11.216.264.483.21.719-.048.218-.348.344-.467.532-.165.26-.322.528-.439.813-.05.124.007.323-.11.386-.173.09-.65-.135-.65-.135z"
+        style={{
+          opacity: 1,
+          fill: "#c9f4f0",
+          fillOpacity: 1,
+          stroke: "#000",
+          strokeWidth: 0.195,
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          strokeDasharray: "none",
+          strokeOpacity: 1,
+          paintOrder: "markers fill stroke",
+        }}
+        transform="translate(-8.686 -2.44)"
+      />
+      <g
+        style={{
+          opacity: 1,
+        }}
+      >
+        <path
+          d="M67.688 12.577c2.39-1.656 1.453-4.108 1.453-4.108l.797.585s.368 2.294-1.218 3.407z"
+          style={{
+            fill: "#000",
+            fillOpacity: 1,
+            stroke: "#000",
+            strokeWidth: 0.195,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeDasharray: "none",
+            strokeOpacity: 1,
+            paintOrder: "markers fill stroke",
+          }}
+          transform="translate(-8.686 -2.44)"
+        />
+        <path
+          d="M68.84 12.485c1.764-1.72 1.202-3.371 1.202-3.371l.498.462s.263 1.397-.92 2.714z"
+          style={{
+            fill: "#fffc92",
+            fillOpacity: 1,
+            stroke: "#fffc92",
+            strokeWidth: 0.19542,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeDasharray: "none",
+            strokeOpacity: 1,
+            paintOrder: "markers fill stroke",
+          }}
+          transform="translate(-8.686 -2.44)"
+        />
+        <path
+          d="m70.597 9.577.35.93v.444l.562.391-.79.105-.344.457-.51.333-.104.047s1.216-1.304.836-2.707z"
+          style={{
+            opacity: 1,
+            fill: "#000",
+            fillOpacity: 1,
+            stroke: "#000",
+            strokeWidth: 0.195,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeDasharray: "none",
+            strokeOpacity: 1,
+            paintOrder: "markers fill stroke",
+          }}
+          transform="translate(-8.686 -2.44)"
+        />
+        <path
+          d="M65.235 8.097c-.433.149-1.179.602-1.32 1.404-.068.38.098.803.25 1.157.842 1.782 3.289 1.473 3.273-.742-.012-1.786-.581-2.328-2.203-1.819z"
+          style={{
+            opacity: 1,
+            fill: "#fffc92",
+            fillOpacity: 1,
+            stroke: "#fffc92",
+            strokeWidth: 0.195,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeDasharray: "none",
+            strokeOpacity: 1,
+            paintOrder: "markers fill stroke",
+          }}
+          transform="translate(-8.686 -2.44)"
+        />
+        <path
+          d="M66.318 12.344c3.145-1.265 1.582-4.32 1.582-4.32l1.007.328s1.093 2.468-1.48 4.176z"
+          style={{
+            opacity: 1,
+            fill: "#fffc92",
+            fillOpacity: 1,
+            stroke: "#fffc92",
+            strokeWidth: 0.19542,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeDasharray: "none",
+            strokeOpacity: 1,
+            paintOrder: "markers fill stroke",
+          }}
+          transform="translate(-8.686 -2.44)"
+        />
+        <path
+          d="M65.374 11.864c3.156-1.38 1.371-3.991 1.371-3.991l1.182.187s1.45 2.704-1.416 4.343z"
+          style={{
+            opacity: 1,
+            fill: "#000",
+            fillOpacity: 1,
+            stroke: "#000",
+            strokeWidth: 0.195,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeDasharray: "none",
+            strokeOpacity: 1,
+            paintOrder: "markers fill stroke",
+          }}
+          transform="translate(-8.686 -2.44)"
+        />
+        <path
+          d="M70.687 11.483c-.254.421-.47.713-1.325.947-1.33.364-3.897.202-5.1-1.403-.498-.615-.67-1.32-.326-2.047.843-1.298 2.302-1.312 3.648-1.04.433.086.862.21 1.267.385.517.225 1.454.83 1.766 1.263.23.322.398.904.325 1.298-.039.213-.144.411-.255.597z"
+          style={{
+            fill: "none",
+            stroke: "#000",
+            strokeWidth: 0.199375,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeDasharray: "none",
+            strokeOpacity: 1,
+            paintOrder: "markers fill stroke",
+          }}
+          transform="translate(-8.686 -2.44)"
+        />
+      </g>
+      <path
+        d="M65.497 7.88s-.02-.195-.042-.29c-.033-.15-.06-.308-.136-.442a.833.833 0 0 0-.215-.24c-.11-.085-.247-.263-.368-.194-.046.026-.025.107-.008.157.03.087.096.169.178.21.109.057.368.03.368.03M64.318 9.486c-.056-.022-.083-.09-.106-.146-.046-.113.055-.387.14-.465.041-.037.13-.036.164.006.12.145-.03.67-.198.605zM65.806 9.65c-.179-.03-.155-.408-.015-.655a.2.2 0 0 1 .143-.038c.25.06.194.746-.128.693z"
+        style={{
+          opacity: 1,
+          fill: "#000",
+          fillOpacity: 1,
+          stroke: "#000",
+          strokeWidth: 0.195,
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          strokeDasharray: "none",
+          strokeOpacity: 1,
+          paintOrder: "markers fill stroke",
+        }}
+        transform="translate(-8.686 -2.44)"
+      />
+      <path
+        d="M65.683 10.135c-.276.139-.877.338-1.491-.14"
+        style={{
+          opacity: 1,
+          fill: "none",
+          fillOpacity: 1,
+          stroke: "#000",
+          strokeWidth: 0.195,
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          strokeDasharray: "none",
+          strokeOpacity: 1,
+          paintOrder: "markers fill stroke",
+        }}
+        transform="translate(-8.686 -2.44)"
+      />
+      <path
+        d="M66.218 10.086c-.02-.053-.05-.194.065-.232.134-.045.223.155.223.155s.147-.161.255-.095c.086.052.027.171-.006.215-.054.07-.298.3-.368.284-.039-.008-.142-.255-.142-.255z"
+        style={{
+          opacity: 1,
+          fill: "#893232",
+          fillOpacity: 1,
+          stroke: "#893232",
+          strokeWidth: 0.120667,
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          strokeDasharray: "none",
+          strokeOpacity: 1,
+          paintOrder: "markers fill stroke",
+        }}
+        transform="translate(-8.686 -2.44)"
+      />
+      <path
+        d="M67.978 8.023s.254-.742.45-1.042c.517-.795 1.358-1.382 2.052-1.579.342-.097.724-.175 1.064-.07.59.191.688.584.435 1.1-.27.52-.748.787-1.195.905.486.044.996.02 1.461.182.758.38.56.932.088 1.169-.535.246-1.13.238-1.707.263-.236.013-.757-.053-.757-.053s-.759-.448-.943-.53c-.409-.185-.8-.351-.948-.345z"
+        style={{
+          opacity: 1,
+          fill: "#c9f4f0",
+          fillOpacity: 1,
+          stroke: "#000",
+          strokeWidth: 0.195,
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          strokeDasharray: "none",
+          strokeOpacity: 1,
+          paintOrder: "markers fill stroke",
+        }}
+        transform="translate(-8.686 -2.44)"
+      />
+      <path
+        d="M68.425 8.106s.328-.14.497-.196c.273-.091.833-.23.833-.23"
+        style={{
+          opacity: 1,
+          fill: "#c9f4f0",
+          fillOpacity: 1,
+          stroke: "#000",
+          strokeWidth: 0.195,
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          strokeDasharray: "none",
+          strokeOpacity: 1,
+          paintOrder: "markers fill stroke",
+        }}
+        transform="translate(-8.686 -2.44)"
+      />
+    </g>
   </svg>
-)
+)}
+
 export default Lirio
+

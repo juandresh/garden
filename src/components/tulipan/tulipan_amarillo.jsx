@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./tulipan.css";
 
 const TulipanAmarillo = (props) => {
-  const [corazon, setCorazon] = useState(false);
+const [corazon, setCorazon] = useState(false);
 
   return (
 

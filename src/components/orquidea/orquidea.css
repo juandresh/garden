@@ -1,0 +1,84 @@
+.petalo {
+  transform-box: fill-box;
+}
+
+.petaloArriba.animar {
+  transform-origin: bottom;
+  animation: arriba 1.5s ease-out;
+}
+
+@keyframes arriba {
+  0%   { transform: rotate(-5deg); }
+  25% { transform: rotate(5deg); }
+  50%   { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100%   { transform: rotate(0deg); }
+}
+
+.petaloDerAbajo.animar {
+  transform-origin: right top;
+  animation: derAb 1.5s ease-in-out;
+}
+
+@keyframes derAb {
+  0%   { transform: rotate(-3deg) translateY(-1px); }
+  25% { transform: rotate(3deg) translateY(-1px); }
+  50%   { transform: rotate(-3deg) translateY(-1px); }
+  75% { transform: rotate(3deg) translateY(-1px); }
+  100%   { transform: rotate(0deg) translateY(0px); }
+}
+
+.petaloIzqAbajo.animar {
+  transform-origin: left top;
+  animation: izqAb 1.5s ease-out;
+}
+
+@keyframes izqAb {
+  0%   { transform: rotate(-3deg) translateY(-1px); }
+  25% { transform: rotate(3deg) translateY(-1px); }
+  50%   { transform: rotate(-3deg) translateY(-1px); }
+  75% { transform: rotate(3deg) translateY(-1px); }
+  100%   { transform: rotate(0deg) translateY(0px); }
+}
+
+.petaloIzquierdo.animar {
+  transform-origin: right center;
+  animation: izq 1.5s ease-out;
+}
+
+@keyframes izq {
+  0%   { transform: rotate(-5deg); }
+  25% { transform: rotate(5deg); }
+  50%   { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100%   { transform: rotate(0deg); }
+}
+
+.petaloDerecho.animar {
+  transform-origin: left center;
+  animation: der 1.5s ease-out;
+}
+
+@keyframes der {
+  0%   { transform: rotate(-5deg); }
+  25% { transform: rotate(5deg); }
+  50%   { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100%   { transform: rotate(0deg); }
+}
+
+
+.pistilo.animar {
+  transform-origin: center;
+  animation: pis 1.5s ease-out;
+}
+
+@keyframes pis {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.orqui{
+    width: 350px;
+}
