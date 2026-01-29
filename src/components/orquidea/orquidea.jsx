@@ -16,7 +16,7 @@ const Orquidea = (props) => {
     onClick={() => setAnimar(!animar)}
     style={{ cursor: "pointer" }}
     {...props}
-    className="orqui"
+    className={`orqui ${props.className || ""}`}
   >
     <defs>
       <linearGradient id="a">
