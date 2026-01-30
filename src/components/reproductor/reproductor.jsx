@@ -6,14 +6,14 @@ import Next from "/src/assets/items/botonSig.svg"
 import Prev from "/src/assets/items/botonAnt.svg"
 
 const canciones = [
-    "/public/songs/1.mp3",  // your'e my best friend
-    "/public/songs/2.mp3",  // stupid love story
-    "/public/songs/3.mp3",  // runaway
-    "/public/songs/4.mp3",  // your eyes tell
-    "/public/songs/5.mp3",  // puntos suspensivos
-    "/public/songs/6.mp3",  // te invito
-    "/public/songs/7.mp3",  // lago en el cielo
-    "/public/songs/8.mp3"   // loco por tu amor
+    "public/songs/1.mp3",  // your'e my best friend
+    "public/songs/2.mp3",  // stupid love story
+    "public/songs/3.mp3",  // runaway
+    "public/songs/4.mp3",  // your eyes tell
+    "public/songs/5.mp3",  // puntos suspensivos
+    "public/songs/6.mp3",  // te invito
+    "public/songs/7.mp3",  // lago en el cielo
+    "public/songs/8.mp3"   // loco por tu amor
 ]
 
 export default function Reproductor() {
