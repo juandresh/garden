@@ -11,6 +11,7 @@ import TulipanMorado from './components/tulipan/tulipan_morado'
 import TulipanRosado from './components/tulipan/tulipan_rosado'
 import Cerca from './assets/items/cerca.svg'
 import Nube from './assets/items/nube.svg'
+import Foto from './assets/items/foto.jpeg'
 import Reproductor from './components/reproductor/reproductor'
 
 import './App.css'
@@ -68,19 +69,22 @@ function App() {
         {mostrarModal && (
           <div className="modal-overlay" onClick={() => setMostrarModal(false)}>
             <div className="modal" onClick={(e) => e.stopPropagation()}>
-              <p>Solo quiero recordarte lo importante que eres para mí y lo mucho que te amo. 
-                Este tiempo a tu lado ha sido para mí de lo más maravilloso, y tengo toda la 
-                seguridad de que seguirá siendo así. Desde que te conocí, todo ha mejorado para 
-                mí, he encontrado un sentido para hacer las cosas con amor, algo que me hace 
-                sentir feliz y realizado. Sin duda, conocer a una mujer tan inteligente, 
-                hermosa, especial y maravillosa ha sido lo mejor que me ha podido pasar. 
-                Me llena de alegría el pensar en nuestro futuro juntos, yo realizándome 
-                contigo a mi lado y tú realizándote conmigo a tu lado. Te amo mucho, 
-                mi noviecita hermosa ❤️</p>
 
-              <p></p>
+              <div className="modal-contenido">
+                <p>Solo quiero recordarte lo importante que eres para mí y lo mucho que te amo. 
+                  Este tiempo a tu lado ha sido para mí de lo más maravilloso, y tengo toda la 
+                  seguridad de que seguirá siendo así. Desde que te conocí, todo ha mejorado para 
+                  mí, he encontrado un sentido para hacer las cosas con amor, algo que me hace 
+                  sentir feliz y realizado. Sin duda, conocer a una mujer tan inteligente, 
+                  hermosa, especial y maravillosa ha sido lo mejor que me ha podido pasar. 
+                  Me llena de alegría el pensar en nuestro futuro juntos, yo realizándome 
+                  contigo a mi lado y tú realizándote conmigo a tu lado. Te amo mucho, 
+                  mi noviecita hermosa ❤️</p>
 
-              <button onClick={() => setMostrarModal(false)}>
+                <img src={Foto} className='fotito'/>
+              </div>
+
+              <button className="btn-cerrar" onClick={() => setMostrarModal(false)}>
                 Cerrar
               </button>
             </div>

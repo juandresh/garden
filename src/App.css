@@ -90,10 +90,48 @@
 
 .modal {
   background: #7983db;
-  padding: 20px 30px;
+  padding: 20px 25px;
   border-radius: 12px;
-  max-width: 300px;
-  text-align: center;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px;
+}
+
+.modal-contenido {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-align: left;
+}
+
+.fotito {
+  width: 35%;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.btn-cerrar {
+  align-self: center;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #24234b;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .modal-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fotito {
+    width: 50%;
+  }
 }
 
 .cerca {
