@@ -79,7 +79,7 @@ function App() {
                   hermosa, especial y maravillosa ha sido lo mejor que me ha podido pasar. 
                   Me llena de alegría el pensar en nuestro futuro juntos, yo realizándome 
                   contigo a mi lado y tú realizándote conmigo a tu lado. Te amo mucho, 
-                  mi noviecita hermosa ❤️</p>
+                  mi noviecita preciosa ❤️</p>
 
                 <img src={Foto} className='fotito'/>
               </div>
