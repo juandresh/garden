@@ -1,0 +1,27 @@
+.rep {
+    width: 100%;
+    height: 100%;
+    background-color: #C0C9EE;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rep button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.botonp{
+    width: 45px;
+    height: 45px;
+}
+
+.botons{
+    width: 30px;
+    height: 30px;
+}
